@@ -146,9 +146,6 @@ class TrainingWindow:
         self.word_freqs = collections.Counter()
         self.num_recs = 0
         self.stopWords = ['AT_USER', 'URL']
-
-
-
         
         self.tweetidsTrain = list()
         self.tweetsetTrain = list()
@@ -167,8 +164,6 @@ class TrainingWindow:
         self.progress_bar.config(mode='determinate', maximum=100, value=0)
         self.progress_bar_2 = ttk.Progressbar(frame, orient="horizontal", length=100)
         
-
-
         self.label_1.pack()
         self.entry_1.pack()
         self.button_1.pack()
@@ -177,14 +172,3 @@ class TrainingWindow:
         self.button_3.pack()
         self.progress_bar.pack()
 
-
-        def trainModel(self):
-            print("Test Text")
-
-        def testModel(self):
-            print("Test Text")
-        
-
-#root = Tk()
-#win = TrainingWindow(root)
-#root.mainloop()
